@@ -22,6 +22,7 @@
 
     <properties>
         <kafka.version>2.5.0</kafka.version>
+        <tablesaw-core.version>0.38.1</tablesaw-core.version>
     </properties>
 
     <dependencies>
@@ -34,8 +35,33 @@
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
             <version>${kafka.version}</version>
+
+
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/tech.tablesaw/tablesaw-core -->
+        <dependency>
+            <groupId>tech.tablesaw</groupId>
+            <artifactId>tablesaw-core</artifactId>
+            <version>${tablesaw-core.version}</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>7.8.1</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.26</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
